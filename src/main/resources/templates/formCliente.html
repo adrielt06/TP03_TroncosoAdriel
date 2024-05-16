@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/estilos.css"></link>
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<header id="header">
+			<h1 style="color: blue">Frameworks para aplicaciones Web</h1>
+			<nav>
+			<ul>
+				<li><a href="#definicion">Definición.</a></li>
+				<li><a href="#ventajas">Ventajas y utilidad.</a></li>
+				<li><a href="#ejemplos">Ejemplos.</a></li>
+			</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<h1>Formulario de carga de datos</h1>
+			<form>
+				<label for="dni">DNI</label>
+				<input name="dni" id="dni" type="number" required placeholder="DNI sin puntos"></input><br>
+				
+				<label for="nombre">Nombres</label>
+				<input name="nombre" id="nombre" type="text" required placeholder="Todos los nombres"></input><br>
+				
+				<label for="apellidos">Apellidos</label>
+				<input name="apellidos" id="apellidos" type="text" required placeholder="Todos los apellidos"></input><br>
+				
+				<label for="fechaNac">Fecha Nacimiento</label>
+				<input name="fechaNac" id="fechaNac" type="date" required placeholder=""></input><br>
+				
+				
+				<label for="genero">Genero</label><br>
+				<div>
+					<label for="genero">Masculino:</label>
+					<input name="genero" id="generoM" type="radio" required value="Masculino"></input><br>
+					<label for="genero">Femenino</label>
+					<input name="genero" id="generoF" type="radio" required value="Femenino"></input><br>
+					<label for="genero">X</label>
+					<input name="genero" id="generoX" type="radio" required value="X"></input><br>
+				</div>
+				
+				<label for="correo">Correo Electronico</label>
+				<input name="correo" id="correo" type="email" required placeholder="xxx@xxx"></input><br>
+				
+				<label for="domicilio">Domicilio</label>
+				<input name="domicilio" id="domicilio" type="text" required placeholder="Calle y Numero"></input><br>
+				
+				<label for="provincia">Provincia</label>
+				<select id="provincia" name="provincia" required>
+					<option value="Jujuy" selected>Jujuy</option>
+					<option value="LaRioja">La Rioja</option>
+					<option value="Tucuman">Tucuman</option>
+				</select><br>
+				
+				<label for="celular">Celular</label>
+				<input name="celular" id="celular" type="number" required placeholder="Sin simbolos"></input><br>
+				
+				<label for="intereses">Categorias de Interes</label>
+				<div>
+					<label for="intereses">Futbol:</label>
+					<input id="intereses" type="checkbox" name="intereses"></input><br>
+					<label for="intereses">F1:</label>
+					<input id="intereses" type="checkbox" name="intereses"></input><br>
+					<label for="intereses">Cocina:</label>
+					<input id="intereses" type="checkbox" name="intereses"></input><br>
+				</div>
+				
+				<label for="sugerencia">Sugerencias</label><br>
+				<textarea name="sugerencia" id="sugerencia" placeholder="¿Alguna sugerencia?" rows="4" cols="50"></textarea><br>
+				
+				<label for="passwd">Contraseña</label>
+				<input name="passwd" id="passwd" type="password" maxlength="10" minlength="4" placeholder="Recuerde la contraseña!"></input><br>
+				
+				<label for="passwdAgain">Contraseña de nuevo</label>
+				<input name="passwdAgain" id="passwdAgain" type="password" maxlength="10" minlength="4" placeholder="Recuerde la contraseña!"></input><br>
+				
+				<label for="tyc">Acepto los Terminos y Condiciones</label>
+				<input name="tyc" id="tyc" type="checkbox" required></input><br>
+				
+				<label for="infoRelativa">Acepto recibir informacion relativa a la empresa</label>
+				<input name="infoRelativa" id="tyc" type="checkbox" required></input><br>
+				
+				<input type="submit" value="Guardar"></input>
+				<input type="button" value="Cancelar"></input>
+			</form>
+		</main>
+		<footer>
+			<h2>Informacion de alumno</h2>
+			<ul>
+				<li><strong>Apellido y nombre:</strong> Troncoso, David Adriel</li>
+	 			<li><strong>Libreta universitaria:</strong> APU5593</li>
+				<li><strong>Correo electronico:</strong> adrieltroncoso06@gmail.com</li>
+			</ul>
+		</footer>
+	</body>
+</html>

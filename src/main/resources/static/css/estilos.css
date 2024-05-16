@@ -1,0 +1,23 @@
+@charset "UTF-8";
+footer{
+	background-color: grey;
+}
+#header{
+	background-color: grey;
+}
+.main{
+	background-color: grey;
+	padding: 50px;
+	margin: 30px;
+	flex: 3;
+}
+.aside{
+	flex: 1;
+	padding: 10px;
+	background-color: grey;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
