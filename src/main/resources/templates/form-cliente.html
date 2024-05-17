@@ -3,37 +3,48 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="/css/estilos.css"></link>
-		<title>Insert title here</title>
+		<title>Formulario</title>
 	</head>
 	<body>
 		<header id="header">
-			<h1 style="color: blue">Frameworks para aplicaciones Web</h1>
+			<h1 class="titulo">Frameworks para aplicaciones Web</h1>
 			<nav>
-			<ul>
-				<li><a href="#definicion">Definición.</a></li>
-				<li><a href="#ventajas">Ventajas y utilidad.</a></li>
-				<li><a href="#ejemplos">Ejemplos.</a></li>
+			<ul class="navegacion">
+				<li><a class="enlaceNav" href="/index#definicion">Definición.</a></li>
+				<li><a class="enlaceNav" href="/index#ventajas">Ventajas y utilidad.</a></li>
+				<li><a class="enlaceNav" href="/index#ejemplos">Ejemplos.</a></li>
+				<li><a class="enlaceNav" href="/index">Pagina Principal</a></li>
 			</ul>
 			</nav>
 		</header>
 		<main class="main">
-			<h1>Formulario de carga de datos</h1>
-			<form>
-				<label for="dni">DNI</label>
+			<h1 class="titulo">Formulario de carga de datos</h1>
+			<form class="formulario">
+				<ul>
+				<li>
+				<label for="dni">DNI:</label>
 				<input name="dni" id="dni" type="number" required placeholder="DNI sin puntos"></input><br>
+				</li>
 				
-				<label for="nombre">Nombres</label>
+				<li>
+				<label for="nombre">Nombres:</label>
 				<input name="nombre" id="nombre" type="text" required placeholder="Todos los nombres"></input><br>
+				</li>
 				
-				<label for="apellidos">Apellidos</label>
+				<li>
+				<label for="apellidos">Apellidos:</label>
 				<input name="apellidos" id="apellidos" type="text" required placeholder="Todos los apellidos"></input><br>
+				</li>
 				
-				<label for="fechaNac">Fecha Nacimiento</label>
+				<li>
+				<label for="fechaNac">Fecha Nacimiento:</label>
 				<input name="fechaNac" id="fechaNac" type="date" required placeholder=""></input><br>
+				</li>
 				
 				
-				<label for="genero">Genero</label><br>
-				<div>
+				<li>
+				<label for="genero">Genero:</label><br>
+				<div class="seleccion">
 					<label for="genero">Masculino:</label>
 					<input name="genero" id="generoM" type="radio" required value="Masculino"></input><br>
 					<label for="genero">Femenino</label>
@@ -41,58 +52,82 @@
 					<label for="genero">X</label>
 					<input name="genero" id="generoX" type="radio" required value="X"></input><br>
 				</div>
+				</li>
 				
-				<label for="correo">Correo Electronico</label>
+				<li>
+				<label for="correo">Correo Electronico:</label>
 				<input name="correo" id="correo" type="email" required placeholder="xxx@xxx"></input><br>
+				</li>
 				
-				<label for="domicilio">Domicilio</label>
+				<li>
+				<label for="domicilio">Domicilio:</label>
 				<input name="domicilio" id="domicilio" type="text" required placeholder="Calle y Numero"></input><br>
+				</li>
 				
-				<label for="provincia">Provincia</label>
+				<li>
+				<label for="provincia">Provincia:</label>
 				<select id="provincia" name="provincia" required>
 					<option value="Jujuy" selected>Jujuy</option>
 					<option value="LaRioja">La Rioja</option>
 					<option value="Tucuman">Tucuman</option>
 				</select><br>
+				</li>
 				
-				<label for="celular">Celular</label>
+				<li>
+				<label for="celular">Celular:</label>
 				<input name="celular" id="celular" type="number" required placeholder="Sin simbolos"></input><br>
+				</li>
 				
-				<label for="intereses">Categorias de Interes</label>
-				<div>
-					<label for="intereses">Futbol:</label>
+				<li>
+				<label for="intereses">Categorias de Interes:</label>
+				<div class="seleccion">
+					<label for="intereses">Ofertas de Trabajo:</label>
 					<input id="intereses" type="checkbox" name="intereses"></input><br>
-					<label for="intereses">F1:</label>
+					<label for="intereses">Lenguajes de Programación:</label>
 					<input id="intereses" type="checkbox" name="intereses"></input><br>
-					<label for="intereses">Cocina:</label>
+					<label for="intereses">Guías y Tutoriales:</label>
 					<input id="intereses" type="checkbox" name="intereses"></input><br>
 				</div>
+				</li>
 				
-				<label for="sugerencia">Sugerencias</label><br>
+				<li>
+				<label for="sugerencia">Sugerencias:</label><br>
 				<textarea name="sugerencia" id="sugerencia" placeholder="¿Alguna sugerencia?" rows="4" cols="50"></textarea><br>
+				</li>
 				
-				<label for="passwd">Contraseña</label>
+				<li>
+				<label for="passwd">Contraseña:</label>
 				<input name="passwd" id="passwd" type="password" maxlength="10" minlength="4" placeholder="Recuerde la contraseña!"></input><br>
+				</li>
 				
-				<label for="passwdAgain">Contraseña de nuevo</label>
+				<li>
+				<label for="passwdAgain">Contraseña de nuevo:</label>
 				<input name="passwdAgain" id="passwdAgain" type="password" maxlength="10" minlength="4" placeholder="Recuerde la contraseña!"></input><br>
+				</li>
 				
-				<label for="tyc">Acepto los Terminos y Condiciones</label>
+				<li>
+				<label for="tyc">Acepto los Terminos y Condiciones:</label>
 				<input name="tyc" id="tyc" type="checkbox" required></input><br>
+				</li>
 				
-				<label for="infoRelativa">Acepto recibir informacion relativa a la empresa</label>
+				<li>
+				<label for="infoRelativa">Acepto recibir informacion relativa a la empresa:</label>
 				<input name="infoRelativa" id="tyc" type="checkbox" required></input><br>
+				</li>
+				</ul>
 				
 				<input type="submit" value="Guardar"></input>
 				<input type="button" value="Cancelar"></input>
+				
+				
 			</form>
 		</main>
-		<footer>
-			<h2>Informacion de alumno</h2>
+		<footer id="footer">
+			<h2>Spring: visitanos en nuestras redes</h2>
 			<ul>
-				<li><strong>Apellido y nombre:</strong> Troncoso, David Adriel</li>
-	 			<li><strong>Libreta universitaria:</strong> APU5593</li>
-				<li><strong>Correo electronico:</strong> adrieltroncoso06@gmail.com</li>
+				<li><a href="https://www.youtube.com/user/SpringSourceDev" target="_blank"><img alt="Youtube Spring" src="/imagenes/ytSpring.png"></a>Youtube</li>
+	 			<li><a href="https://github.com/spring-projects" target="_blank"><img alt="Github Spring" src="/imagenes/gitSpring.png"></a>Github</li>
+	 			<li><a href="https://x.com/springcentral" target="_blank"><img alt="Twitter Spring" src="/imagenes/twSpring.png"></a>Twitter</li>
 			</ul>
 		</footer>
 	</body>

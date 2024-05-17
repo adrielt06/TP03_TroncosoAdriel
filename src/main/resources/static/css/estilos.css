@@ -1,23 +1,73 @@
 @charset "UTF-8";
-footer{
-	background-color: grey;
+#footer{
+	background-color: #6db33f;
+	color: #12260f;
 }
+
+.titulo{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-shadow: lime;
+}
+
 #header{
-	background-color: grey;
+	background-color: #1b1f23;
+	color: white;
+}
+
+li{
+	color: black;
 }
 .main{
-	background-color: grey;
+	background-color: #aad2ac;
 	padding: 50px;
 	margin: 30px;
 	flex: 3;
+	font-size: 20px;
 }
+
+.seccion{
+	text-align: justify;
+}
+
 .aside{
 	flex: 1;
 	padding: 10px;
-	background-color: grey;
+	background-color: #1b1f23;
+	color: white;
+	font-size: 20px;
+	text-align: center;
 }
+
 .container{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+}
+
+.navegacion{
+	background-color: #6db33f;
+}
+
+.enlaceNav{
+	font-size: 25px;
+	font-style: oblique;
+	text-decoration: none;
+}
+
+.tabla{
+	border-collapse: collapse;
+	border: 1px solid black;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.seleccion{
+	margin: 20px;
+	font-weight: normal;
+}
+
+.formulario{
+	font-weight: bold;
 }

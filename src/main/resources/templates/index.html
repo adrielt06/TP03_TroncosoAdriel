@@ -6,28 +6,29 @@
 <title>Programación visual</title>
 </head>
 <body>
-<header>
-	<h1 style="color: blue">Frameworks para aplicaciones Web</h1>
+<header id="header">
+	<h1 class="titulo">Frameworks para aplicaciones Web</h1>
 	<nav>
-		<ul>
-			<li><a href="#definicion">Definición.</a></li>
-			<li><a href="#ventajas">Ventajas y utilidad.</a></li>
-			<li><a href="#ejemplos">Ejemplos.</a></li>
+		<ul class="navegacion">
+			<li><a class="enlaceNav" href="#definicion">Definición.</a></li>
+			<li><a class="enlaceNav" href="#ventajas">Ventajas y utilidad.</a></li>
+			<li><a class="enlaceNav" href="#ejemplos">Ejemplos.</a></li>
+			<li><a class="enlaceNav" href="/formulario">Formulario</a></li>
 		</ul>
 	</nav>
 </header>
 
 <div class="container">
 <main class="main">
-	<section id="definicion">
-		<h2 style="color: blue">Definición</h2>
-		<h3>¿Que es un Framework?</h3>
+	<section class="seccion" id="definicion">
+		<h2 class="titulo">Definición</h2>
+		<h3 class="titulo">¿Que es un Framework?</h3>
 		<p>Es un patrón de diseño arquitectónico para definir un entorno de trabajo basado en conceptos, prácticas y criterios que permite diseñar la solución a un tipo específico de problemas similares.
 		</p>
 		<p>
 		Ofrece una estructura base para elaborar un proyecto, una especie de plantilla que sirve como punto de partida.
 		</p>
-		<h3>¿Que son los framework para aplicaciones web?</h3>
+		<h3 class="titulo">¿Que son los framework para aplicaciones web?</h3>
 		<p>
 		Es un software o conjunto de bibliotecas, diseñado para brindar soporte durante la construcción de cualquier aplicación web.
 		</p>
@@ -35,16 +36,16 @@
 		Es una herramienta de programación versátil, que proporciona un esqueleto al que se le puede añadir la funcionalidad especifica de la aplicación web.
 		</p>
 	</section>
-	<section id="ventajas">
-		<h2 style="color: blue">Ventajas y utilidad</h2>
-		<h3>¿Por qué usar frameworks en aplicaciones web?</h3>
+	<section class="seccion" id="ventajas">
+		<h2 class="titulo">Ventajas y utilidad</h2>
+		<h3 class="titulo">¿Por qué usar frameworks en aplicaciones web?</h3>
 		<p>
 		Utilizar frameworks simplifica en gran cantidad el proceso de desarrollo, al proporcionar el esqueleto o plantilla para el proyecto.
 		</p>
 		<p>
 		De esta forma se agiliza el proceso de desarrollo ya que podemos reutilizar herramientas, facilitando las tareas, reduciendo los tiempos y evitando errores.
 		</p>
-		<h3>¿Cuales son las principales ventajas del uso de frameworks?</h3>
+		<h3 class="titulo">¿Cuales son las principales ventajas del uso de frameworks?</h3>
 		<ol>
 			<li><a>Ahorro de tiempos de desarrollo.</a></li>
 			<li><a>Reducción del riesgo de errores.</a></li>
@@ -54,63 +55,64 @@
 			<li><a>Seguridad web.</a></li>
 		</ol>
 	</section>
-	<section id="ejemplos">
-		<h2 style="color: blue">Ejemplos</h2>
-		<h3>Frameworks de desarrollo web</h3>
-		<table>
+	<section class="seccion" id="ejemplos">
+		<h2 class="titulo">Ejemplos</h2>
+		<h3 class="titulo">Frameworks de desarrollo web</h3>
+		<table class="tabla">
 			<tr>
-				<th>Framework</th>
-				<th>Lenguaje</th>
-				<th>Fecha de lanzamiento</th>
-				<th>Desarrollador</th>
+				<th class="tabla">Framework</th>
+				<th class="tabla">Lenguaje</th>
+				<th class="tabla">Fecha de lanzamiento</th>
+				<th class="tabla">Desarrollador</th>
 			</tr>
 			<tr>
-				<td>React</td>
-				<td>Javascript</td>
-				<td>29 de mayo de 2013</td>
-				<td>Facebook</td>
+				<td class="tabla">React</td>
+				<td class="tabla">Javascript</td>
+				<td class="tabla">29 de mayo de 2013</td>
+				<td class="tabla">Facebook</td>
 			</tr>
 			<tr>
-				<td>Angular</td>
-				<td>TypeScript, JavaScript, AngularJS</td>
-				<td>14 de septiembre de 2016</td>
-				<td>Google Inc.</td>
+				<td class="tabla">Angular</td>
+				<td class="tabla">TypeScript, JavaScript, AngularJS</td>
+				<td class="tabla">14 de septiembre de 2016</td>
+				<td class="tabla">Google Inc.</td>
 			</tr>
 			<tr>
-				<td>Django</td>
-				<td>Python</td>
-				<td>Julio 2005</td>
-				<td>Django Software Foundation</td>
+				<td class="tabla">Django</td>
+				<td class="tabla">Python</td>
+				<td class="tabla">Julio 2005</td>
+				<td class="tabla">Django Software Foundation</td>
 			</tr>
 			<tr>
-				<td>Spring</td>
-				<td>Java, Kotlin, Groovy</td>
-				<td>16 de noviembre de 2002</td>
-				<td>SpringSource</td>
+				<td class="tabla">Spring</td>
+				<td class="tabla">Java, Kotlin, Groovy</td>
+				<td class="tabla">16 de noviembre de 2002</td>
+				<td class="tabla">SpringSource</td>
 			</tr>
 			<tr>
-				<td>Ruby on Rails</td>
-				<td>Ruby</td>
-				<td>13 de diciembre de 2005</td>
-				<td>Rails Core Team</td>
+				<td class="tabla">Ruby on Rails</td>
+				<td class="tabla">Ruby</td>
+				<td class="tabla">13 de diciembre de 2005</td>
+				<td class="tabla">Rails Core Team</td>
 			</tr>
 		</table>
 	</section>
 </main>
 <aside class="aside">
-	<h2>Spring</h2>
+	<h2 class="titulo">Spring</h2>
 	<p>Durante el cursado se utilizara el framework Spring (en Java) para desarrollo web.</p>
 	<a href="https://spring.io" target="_blank" >
 	<img alt="Logo de Spring" src=/imagenes/logo-spring.png >
 	</a>
+	<p>Spring hace que la programación en Java sea más rápida, fácil y segura para todos.Su enfoque en la velocidad, la simplicidad y la productividad o ha convertido en el framework Java más popular del mundo.</p>
 </aside>
 </div>
-<footer>
-	<h2>Informacion de alumno</h2>
+<footer id="footer">
+	<h2>Spring: visitanos en nuestras redes</h2>
 	<ul>
-		<li><strong>Apellido y nombre:</strong> Troncoso, David Adriel</li>
-	 	<li><strong>Libreta universitaria:</strong> APU5593</li>
-		<li><strong>Correo electronico:</strong> adrieltroncoso06@gmail.com</li>
+		<li><a href="https://www.youtube.com/user/SpringSourceDev" target="_blank"><img alt="Youtube Spring" src="/imagenes/ytSpring.png"></a>Youtube</li>
+	 	<li><a href="https://github.com/spring-projects" target="_blank"><img alt="Github Spring" src="/imagenes/gitSpring.png"></a>Github</li>
+	 	<li><a href="https://x.com/springcentral" target="_blank"><img alt="Twitter Spring" src="/imagenes/twSpring.png"></a>Twitter</li>
 	</ul>
 </footer>
 </body>

@@ -8,6 +8,6 @@ public class FormClienteController {
 	@GetMapping("/formulario")
 	public String getFormulario() {
 		
-		return "formCliente";
+		return "form-cliente";
 	}
 }
